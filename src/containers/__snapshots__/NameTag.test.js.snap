@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameTag component renders NameTag 1`] = `
+<Fragment>
+  <h1>
+    Name Tag
+  </h1>
+  <TextSelector
+    onChange={[Function]}
+    text=""
+  />
+</Fragment>
+`;

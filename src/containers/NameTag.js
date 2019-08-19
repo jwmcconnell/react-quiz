@@ -1,9 +1,11 @@
 import React from 'react';
 import TextSelector from '../components/TextSelector';
+import ColorSelector from '../components/ColorSelector';
 
 class NameTag extends React.Component {
   state = {
-    text: ''
+    text: '',
+    color: '#FFF'
   }
 
   onChange = e => {
@@ -11,11 +13,12 @@ class NameTag extends React.Component {
   }
    
   render() {
-    const { text } = this.state;
+    const { text, color } = this.state;
     return (
       <>
         <h1>Name Tag</h1>
         <TextSelector text={text} onChange={this.onChange} />
+        <ColorSelector color={color} onChange={this.onChange} />
       </>
     ); 
   }

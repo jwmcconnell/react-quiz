@@ -9,5 +9,9 @@ exports[`NameTag component renders NameTag 1`] = `
     onChange={[Function]}
     text=""
   />
+  <ColorSelector
+    color="#FFF"
+    onChange={[Function]}
+  />
 </Fragment>
 `;

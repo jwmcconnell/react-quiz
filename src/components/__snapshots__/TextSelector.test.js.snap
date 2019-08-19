@@ -1,10 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TextSelector component renders TextSelector 1`] = `
-<input
-  name="text"
-  onChange={[Function]}
-  type="text"
-  value=""
-/>
+<label>
+  Text:
+  <input
+    name="text"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</label>
 `;

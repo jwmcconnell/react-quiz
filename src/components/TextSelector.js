@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const TextSelector = ({ text, onChange }) => {
-  return <input type="text" name="text" value={text} onChange={onChange} />;
+  return (
+    <label>Text:
+      <input type="text" name="text" value={text} onChange={onChange} />
+    </label>
+  );
 };
 
 TextSelector.propTypes = {

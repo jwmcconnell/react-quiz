@@ -7,7 +7,7 @@ const TextSelector = ({ text, onChange }) => {
 
 TextSelector.propTypes = {
   text: PropTypes.string.isRequired,
-  onChange: PropTypes.string.isRequired
+  onChange: PropTypes.func.isRequired
 };
 
 export default TextSelector;

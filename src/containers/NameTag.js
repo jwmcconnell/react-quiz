@@ -6,7 +6,8 @@ import Shape from '../components/Shape';
 class NameTag extends React.Component {
   state = {
     text: '',
-    color: '#000'
+    color: '#000000',
+    backgroundColor: '#FFFFFF'
   }
 
   onChange = e => {
@@ -14,13 +15,13 @@ class NameTag extends React.Component {
   }
    
   render() {
-    const { text, color } = this.state;
+    const { text, color, backgroundColor } = this.state;
     return (
       <>
         <h1>Name Tag</h1>
         <TextSelector text={text} onChange={this.onChange} />
-        <ColorSelector color={color} onChange={this.onChange} />
-        <Shape text={text} color={color} />
+        <ColorSelector color={color} backgroundColor={backgroundColor} onChange={this.onChange} />
+        <Shape text={text} color={color} backgroundColor={backgroundColor} />
       </>
     ); 
   }

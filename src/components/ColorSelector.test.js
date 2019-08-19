@@ -4,7 +4,7 @@ import ColorSelector from './ColorSelector';
 
 describe('ColorSelector component', () => {
   it('renders ColorSelector', () => {
-    const wrapper = shallow(<ColorSelector color='#FFF' onChange={() => {}} />);
+    const wrapper = shallow(<ColorSelector color='#FFF' backgroundColor="#000" onChange={() => {}} />);
     expect(wrapper).toMatchSnapshot();
   });
 });

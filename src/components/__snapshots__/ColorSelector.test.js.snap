@@ -17,6 +17,7 @@ exports[`ColorSelector component renders ColorSelector 1`] = `
       name="backgroundColor"
       onChange={[Function]}
       type="color"
+      value="#000"
     />
   </label>
 </Fragment>
